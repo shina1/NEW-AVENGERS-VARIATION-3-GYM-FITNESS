@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 
 :root {
   --h1-color: #ff4301;
@@ -48,15 +49,36 @@ h1 span {
 .plan-back {
   color: var(--plans);
   font-size: 10rem;
-  max-width: 650px;
-  top: -20px;
-  left: 0;
+  top: -10px;
+  left: 20%;
+  right: 2%;
+  translate: transform(-50%, -50%);
   line-height: 1.5;
-  /* right: 0; */
   width: 100%;
-  opacity: 0.7;
-  z-index: 10;
+  opacity: 0.4;
+  z-index: 1;
   font-stretch: expanded;
+}
+
+.plan-front {
+  color: var(--plans);
+  font-size: 10rem;
+  top: -10px;
+  left: -2%;
+  right: 2%;
+  translate: transform(-50%, -50%);
+  line-height: 1.5;
+  width: 100%;
+  opacity: 0.4;
+  z-index: 1;
+  font-stretch: expanded;
+}
+
+.plan-back p,
+.plan-front p {
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: normal;
+  text-transform: uppercase;
 }
 
 .plan-sectn {
@@ -109,6 +131,7 @@ h1 span {
 
 .card-title-s {
   font-size: 2rem;
+  font-weight: bold;
   color: black;
   font-weight: normal;
   z-index: 10;
@@ -116,6 +139,7 @@ h1 span {
 
 .money {
   font-size: 1.8rem;
+  font-weight: bold;
   margin-top: -0.5rem;
 }
 
@@ -150,6 +174,18 @@ p.card-text {
 
 .card-l {
   border: 1px solid #ff7b4d;
+}
+
+.card-title span {
+  border-bottom: 1px solid #828282;
+  display: block;
+  height: 1px;
+  margin-top: 1rem;
+  position: relative;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+  height: 2px;
 }
 
 .rarr {
