@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --h1-color: #ff4301;
+  --body: #e5e5e5;
+  --plans: #ffc7b3;
+}
+
+.body {
+  background: var(--body);
+}
+.hero {
+  font-family: 'Bebas Neue', sans-serif;
+  background: var(--body);
+}
+
+.hero-img {
+  color: white;
+  background-image: url('../img/nathan-dumlao-pzLbV-NFT40-unsplash\ 2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+  height: 660px;
+}
+
+.cover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.pricing {
+  height: 200px;
+}
+
+h1 {
+  z-index: 100;
+}
+
+h1 span {
+  color: var(--h1-color);
+}
+
+.plan-back {
+  color: var(--plans);
+  font-size: 10rem;
+  max-width: 650px;
+  top: -20px;
+  left: 0;
+  line-height: 1.5;
+  /* right: 0; */
+  width: 100%;
+  opacity: 0.7;
+  z-index: 10;
+  font-stretch: expanded;
+}
+
+.plan-sectn {
+  height: 300px;
+}
+
+.special {
+  z-index: 40;
+}
+
+.special h2 {
+  overflow: hidden;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.special h2:before,
+.special h2:after {
+  background-color: #000;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.special h2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.special h2:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.card-body-s {
+  color: black;
+  margin: 0 auto;
+  width: 89%;
+  left: 22px;
+  right: 22px;
+  bottom: 25%;
+  top: 50%;
+  translate: transform(-50%, -50%);
+  background-color: var(--h1-color);
+  opacity: 0.8;
+}
+
+.card-title-s {
+  font-size: 2rem;
+  color: black;
+  font-weight: normal;
+  z-index: 10;
+}
+
+.money {
+  font-size: 1.8rem;
+  margin-top: -0.5rem;
+}
+
+.join {
+  background-color: var(--h1-color);
+  color: white;
+  width: 30%;
+}
+
+.join-l {
+  background-color: var(--h1-color);
+  color: white;
+  width: 35%;
+}
+
+.regular-plans {
+  background-color: var(--body);
+}
+
+h5.card-title {
+  font-size: 2rem;
+}
+
+p.card-text {
+  font-size: 1.4rem;
+}
+
+.list-group li {
+  background-color: #ff7b4d;
+  margin-bottom: 0.5rem;
+}
+
+.card-l {
+  border: 1px solid #ff7b4d;
+}
+
+.rarr {
+  font-size: 1.5rem;
+}
