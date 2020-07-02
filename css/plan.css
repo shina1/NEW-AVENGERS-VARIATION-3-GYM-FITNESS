@@ -245,6 +245,9 @@ p.card-text {
   margin-left: 0.15rem;
 }
 
+sup {
+  font-size: 1.3rem;
+}
 @media (max-width: 500px) {
   .money {
     font-family: Bebas Neue;
