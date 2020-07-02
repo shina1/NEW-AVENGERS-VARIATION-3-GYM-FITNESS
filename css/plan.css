@@ -192,7 +192,9 @@ h2.mobile-h2 {
   color: white;
   width: 30%;
   padding: 0.2rem;
-  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
   transition: all 0.2s ease-in-out;
 }
 
@@ -243,6 +245,10 @@ p.card-text {
 .rarr {
   font-size: 1.5rem;
   margin-left: 0.15rem;
+}
+
+span.value {
+  font-size: 2rem;
 }
 
 sup {
