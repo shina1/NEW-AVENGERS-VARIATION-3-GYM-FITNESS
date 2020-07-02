@@ -18,6 +18,10 @@ body {
     position: relative;
 }
 
+p {
+    font-family: var(--primaryFont);
+}
+
 
 .jumbotron {
     background: url(../../images/servicesbg.png);
@@ -85,7 +89,7 @@ body {
 }
 
 .showcase h2 {
-    font-family: Bebas Neue;
+    font-family: var(--primaryFont);
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
@@ -108,7 +112,7 @@ body {
 }
 
 .title {
-    font-family: Bebas Neue;
+    font-family: var(--primaryFont) !important;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -200,7 +204,6 @@ body {
     position: absolute;
     top: 2050px;
     left: 3em;
-    right: 0;
     z-index: 1;
 }
 
@@ -217,7 +220,7 @@ body {
         line-height: 43px;
     }
 
-    .jumbotron btn {
+    .jumbotron .btn {
         width: 111.11px;
         height: 40px;
     }
