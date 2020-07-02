@@ -50,7 +50,7 @@ h1 span {
   color: var(--plans);
   font-size: 10rem;
   top: -10px;
-  left: 20%;
+  left: 12%;
   right: 2%;
   translate: transform(-50%, -50%);
   line-height: 1.5;
@@ -60,12 +60,17 @@ h1 span {
   font-stretch: expanded;
 }
 
+.plan-front p,
+.plan-back p {
+  letter-spacing: 0.6em;
+}
+
 .plan-front {
+  position: absolute;
   color: var(--plans);
   font-size: 10rem;
-  top: -10px;
-  left: -2%;
-  right: 2%;
+  left: 0;
+  right: 0;
   translate: transform(-50%, -50%);
   line-height: 1.5;
   width: 100%;
@@ -81,9 +86,9 @@ h1 span {
   text-transform: uppercase;
 }
 
-.plan-sectn {
+/* .plan-sectn {
   height: 300px;
-}
+} */
 
 .special {
   z-index: 40;
@@ -100,7 +105,7 @@ h1 span {
 
 .special h2:before,
 .special h2:after {
-  background-color: #000;
+  background-color: #808080;
   content: '';
   display: inline-block;
   height: 1px;
@@ -157,7 +162,7 @@ h1 span {
   font-family: Bebas Neue;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 48px;
   line-height: 77px;
   text-align: center;
   margin-top: -1.8rem;
@@ -180,70 +185,20 @@ h2.mobile-h2 {
   text-align: center;
 }
 
-@media (max-width: 500px) {
-  .money {
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 77px;
-    text-align: center;
-    margin-top: -1rem;
-  }
-
-  .special h2 {
-    font-family: Manrope;
-    font-size: 24px;
-    line-height: 21px;
-    text-align: center;
-    color: #0d0d0d;
-  }
-
-  .hero {
-    height: 80vh;
-  }
-
-  .hero-text {
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 1.5;
-  }
-
-  h3.display-3 {
-    scale: 0.6;
-  }
-
-  .special-p {
-    font-size: 14px;
-  }
-
-  .special h2:before,
-  .special h2:after {
-    display: none;
-  }
-
-  .money-s {
-    margin-top: -1rem;
-  }
-
-  .mobile-h2 {
-    scale: 0.7;
-  }
-
-  .mobile-p {
-    font-family: Manrope;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-  }
-}
-
 .join {
   background-color: var(--h1-color);
+  border: none;
+  outline: none;
   color: white;
   width: 30%;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.join:hover {
+  opacity: 0.9;
+  color: #808080;
 }
 
 .join-l {
@@ -287,4 +242,66 @@ p.card-text {
 
 .rarr {
   font-size: 1.5rem;
+  margin-left: 0.15rem;
+}
+
+@media (max-width: 500px) {
+  .money {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 77px;
+    text-align: center;
+    margin-top: -1.2rem;
+  }
+
+  .special h2 {
+    font-family: Manrope;
+    font-size: 24px;
+    line-height: 21px;
+    text-align: center;
+    color: #0d0d0d;
+  }
+
+  .hero-img {
+    height: 500px;
+  }
+
+  .hero-text {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h3.display-3 {
+    font-size: 36px;
+    padding: 2rem;
+  }
+
+  .special-p {
+    font-size: 14px;
+  }
+
+  .special h2:before,
+  .special h2:after {
+    display: none;
+  }
+
+  .money-s {
+    margin-top: -1rem;
+  }
+
+  .mobile-h2 {
+    scale: 0.7;
+  }
+
+  .mobile-p {
+    font-family: Manrope;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
 }
