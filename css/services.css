@@ -204,6 +204,8 @@ body {
     z-index: 1;
 }
 
+/* Responsiveness  Mobile; tablet; and large screens;*/
+
 @media only screen and (max-width: 480px) {
 
     .jumbotron {
