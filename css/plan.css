@@ -17,7 +17,7 @@
 
 .hero-img {
   color: white;
-  background-image: url('../img/nathan-dumlao-pzLbV-NFT40-unsplash\ 2.png');
+  background-image: url('../images/nathan-dumlao-pzLbV-NFT40-unsplash\ 2.png');
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
@@ -91,8 +91,11 @@ h1 span {
 
 .special h2 {
   overflow: hidden;
+  font-family: Manrope;
+  font-size: 56px;
+  line-height: 56px;
   text-align: center;
-  font-size: 3rem;
+  color: #0d0d0d;
 }
 
 .special h2:before,
@@ -120,6 +123,10 @@ h1 span {
   max-width: 800px;
 }
 
+.box {
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.18);
+}
+
 .card-body-s {
   color: black;
   margin: 0 auto;
@@ -135,16 +142,102 @@ h1 span {
 
 .card-title-s {
   font-size: 2rem;
-  font-weight: bold;
+  margin-top: -1.4rem;
   color: black;
+  font-family: Bebas Neue;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
   font-weight: normal;
   z-index: 10;
 }
 
 .money {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-top: -0.5rem;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 77px;
+  text-align: center;
+  margin-top: -1.8rem;
+}
+
+.money-s {
+  margin-top: -1.5rem;
+}
+
+h2.mobile-h2 {
+  font-family: Manrope;
+  line-height: 21px;
+  text-align: center;
+}
+
+.mobile-p {
+  font-family: Manrope;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .money {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 77px;
+    text-align: center;
+    margin-top: -1rem;
+  }
+
+  .special h2 {
+    font-family: Manrope;
+    font-size: 24px;
+    line-height: 21px;
+    text-align: center;
+    color: #0d0d0d;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+
+  .hero-text {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h3.display-3 {
+    scale: 0.6;
+  }
+
+  .special-p {
+    font-size: 14px;
+  }
+
+  .special h2:before,
+  .special h2:after {
+    display: none;
+  }
+
+  .money-s {
+    margin-top: -1rem;
+  }
+
+  .mobile-h2 {
+    scale: 0.7;
+  }
+
+  .mobile-p {
+    font-family: Manrope;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
 }
 
 .join {
