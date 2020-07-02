@@ -13,9 +13,11 @@
     <link rel="apple-touch-icon" href="./public/logo192.png" />
     <link rel="manifest" href="./public/manifest.json" />
     
+    <link href="./css/fontawesome/fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet"> 
     <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="./css/animate.css" rel="stylesheet">
-    <link href="./css/font.css" rel="stylesheet">
+    <link href="./css/font-body.css" rel="stylesheet">
+    <link href="./css/header-footer.css" rel="stylesheet">
     
     <!-- CUSTOM CSS -->
     <link href="./css/bmipage.css" rel="stylesheet">
@@ -27,32 +29,61 @@
 <body>
 
     <div class="d-flex flex-column m-0 w-100 maincon">
+        
+        <header>
+            <div class="containe m-0 p-0 mx-auto">
+                <nav class="navbar navbar-expand-lg navbar-light main_nav_mb">
+                    <a class="navbar-brand company_name" href="#">BE<span style="color:#FF4301">FIT</span></a>
+                
+                    <button class="outside outside_btn_nav_qobi">JOIN US</button>
+                    <button class="navbar-toggler nav_btn" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" >
+                        <div class="navbar-nav align-items-center" >
+                            <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="#">Services</a>
+                            <a class="nav-item nav-link" href="#">Plans</a>
+                            <a class="nav-item nav-link" href="#">Meet The Team</a>
+                            <a class="nav-item nav-link active" href="#">BMI Calculator</a>
+                            <a class="nav-item nav-link" href="#">Blog</a>
+                            <a class="nav-item nav-link" href="#">About Us</a>
+                            <a class="nav-item nav-link" href="#">Contact Us</a>
+                            <button class="inside_btn_nav_qobi">JOIN US</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
 
         <main>
             <!-- hero -->
             <section class="w-100 m-0 p-0 herocon">
-                <div class="d-flex flex-column h-100 m-0 p-0 mx-auto containe">
+                <div class="wow fadeIn d-flex flex-column h-100 m-0 p-0 mx-auto containe" data-wow-delay=".4s">
                     <div class="d-flex align-items-end justify-content-start w-100 header1">
                         <h1 class="mt-5">BMI CALCULATOR</h1>
                     </div>
                     <div class="d-flex flex-column align-items-start justify-content-start w-100 header2" >
                         <h5 class="my-3">Calculate how healthy your weight is based on how tall you are</h5>
-                        <button class="mt-2">CHECK NOW &nbsp; &#8595;</button>
+                        <a href="#bmi_calc">
+                            <button class="mt-2">CHECK NOW &nbsp; &#8595;</button>
+                        </a>
                     </div>
                 </div>
             </section>
 
             <!-- bmi calculator section -->
-            <section class="w-100 m-0 p-0 py-5 bmi mb-5">
+            <section class="w-100 m-0 p-0 py-5 bmi mb-5" id="bmi_calc">
                 <div class="d-flex flex-column align-items-center m-0 p-0 pt-3 mx-auto containe">
                     <!-- header -->
                     <div class="col-12 m-0 p-0 w-100 bmi-header">
                         <h3 class="m-0 p-0 mb-2">YOUR BMI AND HEALTHY WEIGHT RANGE</h3>
                     </div>
                     
-                    <div class="col-12 m-0 p-0 bmi-container">
+                    <div class="col-12 m-0 p-0 bmi-container"  data-wow-delay=".4s">
                         <!-- left section-->
-                        <div class="d-flex flex-column col-sm-12 col-md-12 col-lg-6 col-xl-6 m-0 p-0 py-4 left-section">
+                        <div class="wow fadeInLeft d-flex flex-column col-sm-12 col-md-12 col-lg-6 col-xl-6 m-0 p-0 py-4 left-section"  data-wow-delay=".2s">
                             <div class="d-flex flex-column w-100 m-0 p-0 bmi-calculator">
                                 <div class="w-100 m-0 p-0 mb-3 bmi-description">
                                     <p>There's no "perfect weight" that fits everyone. BMI, or body mass index, 
@@ -79,7 +110,7 @@
                                         <label for="weight">Weight</label>
                                         <div class="d-flex align-items-center mb-4">
                                             <input type="number" name="weight" placeholder="80 - 800" required>
-                                            <p class="m-0">feet</p>
+                                            <p class="m-0">pounds</p>
                                         </div>
                                         <button>CALCULATE &nbsp; &#8594;</button>
 
@@ -90,7 +121,7 @@
                         </div>
 
                         <!-- right section -->
-                        <div class="d-flex flex-column col-sm-12 col-md-12 col-lg-6 col-xl-6 m-0 p-0 right-section" >
+                        <div class="wow fadeInRight d-flex flex-column col-sm-12 col-md-12 col-lg-6 col-xl-6 m-0 p-0 right-section"  data-wow-delay=".2s">
                             <div class="d-flex flex-column w-100 m-0 p-0 bmi-result">
                                 <!-- header -->
                                 <div class="col-12 m-0 p-0 w-100 py-4">
@@ -120,8 +151,13 @@
                                     </div>
                                 </div>
                                 <div class="d-flex flex-row stats">
-                                    <div class="you px-4">
-                                        <p>You</p>
+                                    <div class="d-flex you justify-content-end" >
+                                        <div class="you_container m-0 p-0">
+                                            <div class="px-4"></div>
+                                            <div class="d-flex align-items-center w-100 h-100 you_txt_container">
+                                                <p class="m-0 p-0 you_txt">You</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="d-flex meter-container">
                                         <div class="meter"></div>
@@ -153,7 +189,7 @@
             </section>
 
             <section class="w-100 m-0 p-0 py-5 bmi my-5">
-                <div class="d-flex flex-column align-items-center m-0 p-0 mx-auto containe">
+                <div class="wow fadeIn d-flex flex-column align-items-center m-0 p-0 mx-auto containe" data-wow-delay=".4s">
                     <!-- header -->
                     <div class="col-12 m-0 p-0 w-100 bmi-header">
                         <h3 class="m-0 p-0 mb-2">YOUR FOOD AND EXERCISE TIPS</h3>
@@ -161,7 +197,7 @@
                     
                     <div class="col-12 m-0 p-0 bmi-container">
                         <!-- left section-->
-                        <div class="d-flex flex-column col-sm-12 col-md-12 col-lg-6 col-xl-6 m-0 p-0 py-4 left-section">
+                        <div class="wow fadeInLeft d-flex flex-column col-sm-12 col-md-12 col-lg-6 col-xl-6 m-0 p-0 py-4 left-section"  data-wow-delay=".2s">
                             <div class="d-flex flex-column w-100 m-0 p-0 bmi-calculator">
                                 <div class="w-100 m-0 p-0 mb-3 bmi-description">
                                     <p>Find out how many calories your body is using 
@@ -214,8 +250,8 @@
                             </div>
                         </div>
                         <!-- right section -->
-                        <div class="d-flex flex-column col-sm-12 col-md-12 col-lg-6 col-xl-6 m-0 p-0 right-section" >
-                            <div class="d-flex flex-column w-100 m-0 p-0 bmi-result">
+                        <div class="wow fadeInRight d-flex flex-column col-sm-12 col-md-12 col-lg-6 col-xl-6 m-0 p-0 right-section"  data-wow-delay=".2s">
+                            <div class="wow fadeInRight d-flex flex-column w-100 m-0 p-0 bmi-result" id="main_section" data-wow-delay=".4s">
                                 <!-- header -->
                                 <div class="m-0 p-0 w-100 py-4" >
                                     <h3 class="m-0 p-0 mb-2">RESULT</h3>
@@ -241,26 +277,28 @@
                                     </div>
                                 </div>
                                 <div class="m-0 p-0 w-100 pt-4 my-3 heart-rate-div">
-                                    <h3 class="m-0 p-0 mb-3 heart-rate">TARGET HEART RATES  &nbsp; &#8594;</h3>
+                                    <h3 class="m-0 p-0 mb-3 heart-rate" id="t_h_r_btn">TARGET HEART RATES  &nbsp; &#8594;</h3>
                                 </div>
                             </div>
                             <!-- TARGET HEART RATES -->
-                            <div class="d-flex flex-column w-100 m-0 p-0 bmi-result">
+                            <div class="d-flex flex-column w-100 m-0 p-0 bmi-result" id="t_h_r">
                                 <!-- header -->
                                 <div class="d-flex flex-column align-items-end m-0 p-0 w-100 py-4 text-right heart-rate-div-sub">
-                                    <h4 class="m-0 p-0 mb-1">&#8592;</h4>
-                                    <h4 class="m-0 p-0">BACK TO RESULT</h4>
+                                    <span id="main_section_btn">
+                                        <h4 class="m-0 p-0 mb-1">&#8592;</h4>
+                                        <h4 class="m-0 p-0" >BACK TO RESULT</h4>
+                                    </span>
                                 </div>
                                 <div class="m-0 p-0 w-100 my-3 heart-rate-div">
                                     <h3 class="m-0 p-0 mb-3 heart-rate" style="color:#000">TARGET HEART RATES</h3>
                                 </div>
                                 <div class="m-0 p-0 w-100 pt-4 my-3 heart-rate-div-sub">
-                                    <h4 class="m-0 p-0 mb-3 heart-rate">GENERAL FITNESS RATES  &nbsp; &#8594;</h4>
+                                    <h4 class="m-0 p-0 mb-3 heart-rate" id="g_f_r_btn">GENERAL FITNESS RATES  &nbsp; &#8594;</h4>
                                     <p class="m-0 phead">MODERATE INTENSITY</p>
                                     <p class="m-0">100 - 130 <span style="color:#FF4301">BPM</span></p>
                                 </div>
                                 <div class="m-0 p-0 w-100 pt-4 my-3 heart-rate-div-sub">
-                                    <h4 class="m-0 p-0 mb-3 heart-rate">INTERVAL HEART RATE  &nbsp; &#8594;</h4>
+                                    <h4 class="m-0 p-0 mb-3 heart-rate" id="i_h_r_btn">INTERVAL HEART RATE  &nbsp; &#8594;</h4>
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <p class="m-0 phead">RECOVERY</p>
@@ -274,11 +312,13 @@
                                 </div>
                             </div>
                             <!-- GENERAL FITNESS RATES -->
-                            <div class="d-flex flex-column w-100 m-0 p-0 bmi-result">
+                            <div class="d-flex flex-column w-100 m-0 p-0 bmi-result" id="g_f_r">
                                 <!-- header -->
                                 <div class="d-flex flex-column align-items-end m-0 p-0 w-100 py-4 text-right heart-rate-div-sub">
-                                    <h4 class="m-0 p-0 mb-1">&#8592;</h4>
-                                    <h4 class="m-0 p-0">BACK TO PREVIOUS</h4>
+                                    <span id="t_h_r_prev1"> 
+                                        <h4 class="m-0 p-0 mb-1">&#8592;</h4>
+                                        <h4 class="m-0 p-0">BACK TO PREVIOUS</h4>
+                                    </span>
                                 </div>
                                 <div class="m-0 p-0 w-100 my-3 heart-rate-div">
                                     <h3 class="m-0 p-0 mb-3 heart-rate" style="color:#000">GENERAL FITNESS RATES</h3>
@@ -302,11 +342,13 @@
                                 </div>
                             </div>
                             <!-- INTERVAL HEART RATES -->
-                            <div class="d-flex flex-column w-100 m-0 p-0 bmi-result">
+                            <div class="d-flex flex-column w-100 m-0 p-0 bmi-result" id="i_h_r">
                                 <!-- header -->
                                 <div class="d-flex flex-column align-items-end m-0 p-0 w-100 py-4 text-right heart-rate-div-sub">
-                                    <h4 class="m-0 p-0 mb-1">&#8592;</h4>
-                                    <h4 class="m-0 p-0">BACK TO PREVIOUS</h4>
+                                    <span id="t_h_r_prev2"> 
+                                        <h4 class="m-0 p-0 mb-1">&#8592;</h4>
+                                        <h4 class="m-0 p-0">BACK TO PREVIOUS</h4>
+                                    </span>
                                 </div>
                                 <div class="m-0 p-0 w-100 my-3 heart-rate-div">
                                     <h3 class="m-0 p-0 mb-3 heart-rate" style="color:#000">INTERVAL HEART RATES</h3>
@@ -331,7 +373,7 @@
                     </div>
                 </div>
             </section>
-            <section class="w-100 m-0 p-0 mob">
+            <section class="wow fadeIn w-100 m-0 p-0 mob" data-wow-delay=".4s">
                 <div class="d-flex flex-column h-100 m-0 p-0 mx-auto containe">
                     <div class="d-flex align-items-end justify-content-start w-100 header1">
                         <h1 class="m-0">WANT TO LIVE YOUR BEST LIFE</h1>
@@ -345,7 +387,7 @@
                     </div>
                     <div class="d-flex flex-column align-items-start justify-content-start w-100 header2" >
                         <h5 class="mt-3 mb-4">Get the Food and Fitness newsletter for health tips, wellness updates and more.</h5>
-                        <form class="m-0 py-5 mt-3">
+                        <form class="wow fadeInLeft m-0 py-5 mt-3 desk" data-wow-delay=".4s">
                             <div class="d-flex form-con m-0 mx-auto form-content" >
                                 <div class="d-flex justify-content-center align-items-center m-0 p-0 mail">
                                     <img src="./assets/images/icon/Group.png" alt="mail icon" class="m-0">
@@ -354,7 +396,7 @@
                                     <label for="email">Email Address</label>
                                     <div class="d-flex align-items-center mb-2">
                                         <input type="email" name="email" required>
-                                        <!-- <p class="m-0">years</p> -->
+                                         <p class="m-0">years</p>
                                     </div>
                                     <div class="m-0 mb-4">
                                         <p>
@@ -374,11 +416,154 @@
                         </form>
                     </div>
                 </div>
+            </section> 
+            <section>
+                <div class="d-flex flex-column h-100 m-0 p-0 mx-auto containe">
+                    <form class="wow fadeInLeft m-0 py-5 mb-3 mob" data-wow-delay=".4s">
+                        <div class="d-flex form-con m-0 mx-auto form-content" >
+                            <div class="d-flex justify-content-center align-items-center m-0 p-0 mail">
+                                <img src="./assets/images/icon/Group.png" alt="mail icon" class="m-0">
+                            </div>
+                            <div class="email-section">
+                                <label for="email">Email Address</label>
+                                <div class="d-flex align-items-center mb-2">
+                                    <input type="email" name="email" required>
+                                    <!-- <p class="m-0">years</p> -->
+                                </div>
+                                <div class="m-0 mb-4">
+                                    <p>
+                                        By clicking “Subscribe”, I agree to the 
+                                        <span class="logo">BE<span class="logo-2">FIT</span></span>          
+                                        Terms and Conditions and Privacy Policy. 
+                                        I also agree to receive emails from               
+                                        <span class="logo">BE<span class="logo-2">FIT</span></span>          
+                                        and I understand that I may opt of the  
+                                        <span class="logo">BE<span class="logo-2">FIT</span></span>          
+                                        subscriptions at any time.
+                                    </p>
+                                </div>
+                                <button>SUBSCRIBE  &nbsp; &#8594;</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
 
-        <footer class="mt-auto" >
-            
+        <footer class="mt-auto w-100 m-0 p-0 py-5">
+            <div class="containe m-0 p-0 mx-auto">
+                <div class="d-flex w-100 m-0 p-0 justify-content-between align-items-stretch section_container-qobi">
+                    
+                    <section class="d-flex flex-column zero-section-qobi m-0 p-0">
+                        <div class="header m-0 p-0 w-100">
+                            <h1 class="m-0 p-0">BEFIT <span style="color:#FF4301">GYM</span></h1>
+                        </div>
+                        <div class="body m-0 p-0 w-100">
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus officia aperiam rem voluptates pariatur excepturi ipsam 
+                            quas vero incidunt quia, veniam qui ratione ut molestias earum, 
+                            dolore, aliquam omnis? Nihil!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus officia aperiam rem voluptates pariatur excepturi ipsam 
+                            quas vero incidunt quia, veniam.
+                            </p>
+                        </div>
+                    </section>
+                    
+                    <section class="d-flex flex-column m-0 p-0 one-section-qobi">
+                        <div class="header m-0 p-0 w-100">
+                            <h4 class="thead">EXPLORE</h4>
+                        </div>
+                        <nav class="navbar" >
+                            <div class="justify-content-start w-100" >
+                                <div class="navbar-nav align-items-start" >
+                                    <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-item nav-link" href="#">Services</a>
+                                    <a class="nav-item nav-link" href="#">Plans</a>
+                                    <a class="nav-item nav-link" href="#">Meet The Team</a>
+                                    <a class="nav-item nav-link active" href="#">BMI Calculator</a>
+                                    <a class="nav-item nav-link" href="#">Blog</a>
+                                    <a class="nav-item nav-link" href="#">About Us</a>
+                                    <a class="nav-item nav-link" href="#">Contact Us</a>
+                                    <!-- <button class="m-0 p-0">JOIN US</button> -->
+                                </div>
+                            </div>
+                        </nav>                 
+                    </section>
+                    
+                    <section class="d-flex flex-column m-0 p-0 justify-content-between two-section-qobi">
+                        <div class="d-flex m-0 p-0 first-div-qobi">
+                            <div class="d-flex flex-column m-0 p-0">
+                                <div class="header m-0 p-0 w-100">
+                                    <h4 class="thead">VISIT</h4>
+                                </div>
+                                <div class="body m-0 p-0 w-100 street-qobi">
+                                    <h4>100 STREET ADDRESS, APAPA, LEKKI, LAGOS</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column m-0 p-0">
+                                <div class="header m-0 p-0 w-100">
+                                    <h4 class="thead">LEGAL</h4>
+                                </div>
+                                <div class="body m-0 p-0 w-100">
+                                    <a href=""><h4 class="mb-3">PRIVACY POLICY</h4></a>
+                                    <a href=""><h4>TERMS</h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-0 p-0 pt-3 pb-5 second-div-qobi">
+                            <div class="d-flex flex-column m-0 p-0">
+                                <div class="header m-0 p-0 w-100">
+                                    <h4 class="thead">FOLLOW US ON SOCIAL MEDIA</h4>
+                                </div>
+                                <div class="d-flex body m-0 p-0 w-100 social-media-qobi" >
+                                    <div class="icon_container">
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    <div class="icon_container">
+                                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                                    </div>
+                                    <div class="icon_container">
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                    <div class="icon_container">
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <div class="icon_container">
+                                        <a href=""><i class="fab fa-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>     
+
+                    <section class="only_mobile_section_qobi">
+                        <div class="d-flex justify-content-between m-0 p-0 pb-5 w-100">
+                            <a href=""><h4 class="thead">SITE MAP</h4></a>
+                            <a href=""><h4 class="thead">PRIVACY POLICY</h4></a>
+                            <a href=""><h4 class="thead">CAREERS</h4></a>
+                        </div>
+                    </section>
+
+                    <section class="d-flex flex-column justify-content-between m-0 p-0 three-section-qobi">
+                        <div class="d-flex flex-column m-0 p-0 first-div-qobi">
+                            <div class="header m-0 p-0 w-100">
+                                <h4 class="thead">SUBSCRIBE TO OUR NEWS LETTER</h4>
+                            </div>
+                            <div class="body m-0 p-0 w-100">
+                                <form  class="d-flex flex-column align-items-end m-0 p-0">
+                                    <input class="m-0" type="email" placeholder="Your Email Here">
+                                    <button>SUBSCRIBE</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column m-0 p-0 second-div-qobi">
+                            <h4>&copy; 2020. BEFIT GYM ALL RIGHTS RESERVED</h4>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </footer>
 
     </div>

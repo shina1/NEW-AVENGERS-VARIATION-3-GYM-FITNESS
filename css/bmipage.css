@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth !important;
+}
 body{
     font-family: 'qsregular', sans-serif !important;
     width: 100%;
@@ -20,12 +23,9 @@ form p{
     background-image: url(../assets/images/photo-of-woman-using-earphones-3757954.jpg);
 }
 .subfootercon{
-    height: 350px;
+    /* height: 350px; */
     background-image: url(../assets/images/adult-bowl-cute-daylight-1153370.jpg);
     margin-top: 40px !important;
-}
-.containe{
-    width: 80%;
 }
 .header1{
     height: 35%;
@@ -36,7 +36,6 @@ form p{
 .header2{
     height: 65%;
 }
-
 .header2 h5{
     width: 75%;
     line-height: 30px;
@@ -46,16 +45,6 @@ form p{
 }
 .subfootercon .header2{
     padding: 50px 0 !important;
-}
-button{
-    width: max-content;
-    padding: 10px 20px;
-    font-family: 'bebas';
-    font-size: 30px;
-    border: 0;
-    color: #fff;
-    background: #FF4301;
-    cursor: pointer;
 }
 .bmi-header{
     border-bottom: 1px solid #eaeaea;
@@ -173,6 +162,31 @@ h1{
     cursor: pointer;
     width: max-content;
 }
+.hide{
+    display: none !important;
+}
+.you_container{
+    width: 50px !important;
+    height: max-content;
+    position: relative;
+}
+.px-4{
+    border-top: 25px solid transparent;
+	border-left: 50px solid #555;
+	border-bottom: 25px solid transparent;
+}
+.you_txt_container{
+    width: 50px !important;
+    position: absolute;
+    top:0;
+    padding-left: 5px;
+    /* border: 1px solid black; */
+}
+.you_txt{
+    font-size: .80em;
+    font-family: 'manrope-bold';
+    color: #fff;
+}
 
 @media only screen and (min-width: 768px){
     .herocon{
@@ -209,7 +223,6 @@ h1{
     .mail{
         margin-bottom: 0 !important;
     }
-
     .pz{
         width: max-content;
         margin-right: 20px !important;
@@ -250,15 +263,9 @@ h1{
         width: 70px;
         height: 70px;
     }
-    .containe{
-        width: 85%;
-    }
 }
 
 @media only screen and (min-width: 1200px){
-    .containe{
-        width: 1150px;
-    }
     .header2 h5{
         width: 40% !important;
     }
