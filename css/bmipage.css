@@ -9,9 +9,6 @@ body{
 form p{
     font-size: .80em;
 }
-.maincon{
-    min-height: 100vh;
-}
 .herocon,.subfootercon{
     background-position: center;
     background-size: cover;
